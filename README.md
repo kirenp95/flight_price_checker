@@ -6,7 +6,7 @@ website, parses available flights, and returns structured price and schedule dat
 
 ## Installation
 
-From the `flysafair_checker/` directory:
+From the `flight_price_checker/` directory:
 
 ```
 pip install -e .

@@ -29,10 +29,10 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/kirenp95/"
-Repository = "https://github.com/kirenp95/flysafair-checker"
+Repository = "https://github.com/kirenp95/flight_price_checker"
 
 [project.scripts]
-flysafair-checker = "flysafair_checker.cli:main"
+flysafair-price-checker = "flysafair_checker.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["flysafair_checker*"]
