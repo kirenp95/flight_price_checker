@@ -1,1 +1,1 @@
-"""Tests for FlySafair Price Checker."""
+"""Test for FlySafair Price Checker."""
