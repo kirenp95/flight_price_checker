@@ -23,7 +23,7 @@ python -m flysafair_checker both 2026-04-13
 Or via the console script:
 
 ```
-flysafair-checker dur-jnb 2026-04-13
+flysafair-price-checker dur-jnb 2026-04-13
 ```
 
 ## Module Usage
