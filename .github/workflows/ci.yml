@@ -16,18 +16,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install checker with dev deps
-        working-directory: flysafair_checker
+      - name: Install with dev deps
         run: pip install -e ".[dev]"
 
-      - name: Run checker tests
-        working-directory: flysafair_checker
-        run: pytest
-
-      - name: Install API with dev deps
-        working-directory: flysafair_api
-        run: pip install -e ".[dev]"
-
-      - name: Run API tests
-        working-directory: flysafair_api
+      - name: Run tests
         run: pytest
