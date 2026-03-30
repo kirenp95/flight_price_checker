@@ -36,3 +36,8 @@ flysafair-checker = "flysafair_checker.cli:main"
 
 [tool.setuptools.packages.find]
 include = ["flysafair_checker*"]
+
+[tool.pytest.ini_options]
+markers = [
+    "integration: tests that hit the real FlySafair API",
+]

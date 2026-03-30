@@ -33,8 +33,8 @@ class TestLiveFetch:
 
     def test_dur_jnb_returns_flights(self):
         """Fetch DUR->JNB for today and verify we get valid results."""
-        today = datetime.date.today()
-        raw = fetch_flights("DUR", "JNB", today)
+        date = datetime.date.today() + datetime.timedelta(days=7)
+        raw = fetch_flights("DUR", "JNB", date)
 
         assert raw is not None
         assert len(raw) > 0
@@ -44,8 +44,8 @@ class TestLiveFetch:
 
     def test_jnb_cpt_returns_flights(self):
         """Fetch JNB->CPT for today and verify we get valid results."""
-        today = datetime.date.today()
-        raw = fetch_flights("JNB", "CPT", today)
+        date = datetime.date.today() + datetime.timedelta(days=7)
+        raw = fetch_flights("JNB", "CPT", date)
 
         assert raw is not None
         assert len(raw) > 0
